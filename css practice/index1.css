@@ -1,0 +1,85 @@
+/* Main grid container */
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Grid container */
+  .grid-container {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Default: Small screens */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #f0ec13;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(28, 1, 1, 0.1);
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+  }
+  /* Main grid container */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #560dd3;
+    padding: 10px;
+  }
+  
+  /* Main grid items */
+  .main-cell {
+    background-color: #d1c4e9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Nested grid container */
+  .nested-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #0eef15;
+    padding: 10px;
+  }
+  
+  /* Nested grid items */
+  .nested-cell {
+    background-color: #db3806;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
